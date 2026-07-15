@@ -1,0 +1,42 @@
+1. DESIGN PHILOSOPHY
+Visual: "Weaving Shed Floor" — the UI splits the difference between dark and light in a way unique in the series: a deep, warm, almost-black surface that references the specific interior of a Victorian weaving shed — not a forge, not a mine, not a valve room, but a space filled with the particular quality of light that comes through north-facing skylights onto rows of thundering looms. The shuttle is a wooden object, warm-toned and organic, travelling at lethal speed through a mechanical system of iron and steel. The design language honors both the warmth of the wood and the industrial violence of the mechanism.
+Mood: mill-floor serious, loom-scale industrial, thread-precise, shed-warm, textile-heritage weighted.
+Important: No decorative weave pattern backgrounds, no thread illustration motifs used ornamentally, no cozy craft-adjacent styling. The fly-shuttle was a precision projectile — it crossed a six-foot loom in milliseconds and could kill a weaver if the picking mechanism failed. The app catalogs these objects with the seriousness of industrial machinery documentation, not the warmth of a craft revival.
+
+2. COLORS
+#100C08 — Main background (shed dark — a warm near-black with a brown-amber undertone, like the interior of a Victorian weaving shed with oil-darkened floorboards and decades of cotton lint in the ceiling timbers. Warmer than the powerhouse dark of Currents of the Turbine, less extreme than the forge night of Striking the Copper Stake.)
+#EDE6D8 — Primary text & high-contrast elements (shuttle cream — warm off-white, like the color of undyed cotton warp thread on a pirn under shed lighting)
+#181208 — Secondary panels / card surfaces
+#6E6050 — Secondary text / muted labels (lint grey — warm, dusty, like the color of accumulated cotton fibre on a loom frame)
+#C4873A — Primary accent (persimmon amber — the specific warm orange-brown of persimmon wood — the traditional timber for fly-shuttles — freshly turned and oiled. Darker and more reddish than the prairie gold of Gold of the Prairie, warmer and more woody than the filament amber of Filaments of the Vacuum. The most timber-specific accent in the dark-background group.)
+#1E1810 — Outline / stroke / dividers (loom frame rule lines, warm near-black)
+#4A7A6A — Secondary accent (picking teal — the muted industrial teal of a cast-iron picking mechanism housing, the painted metalwork of a Lancashire loom frame, the green-grey of oiled shuttle-box linings. For condition badges, mill provenance tags, and operational status indicators.)
+#C0392B — Critical errors only
+Important: Persimmon amber is the most timber-specific accent in the dark-background group — it is the color of the wood the primary objects were made from, which makes it the most materially honest accent possible for this app. Picking teal is the color of the iron machinery surrounding the wooden shuttle — the two accents together represent the two material traditions of the weaving shed: organic wood and industrial iron. The shed dark background must retain its warm brown undertone — it should feel like oiled floorboards, not a tech interface.
+
+3. TYPOGRAPHY
+Display / Headings: Archivo (weight 700) — returns from Whistles in the Mist and Echoes of the Survey Line, where it carried railway and geodetic infrastructure authority. Here it carries industrial textile machinery authority — the same wide uppercase geometry now reads like a loom manufacturer's catalog plate, a mill engine specification sheet, or a shuttle-maker's trade stamp. Used for shuttle names, component designations on detail views, and the app title.
+Body / Descriptions: IBM Plex Sans (weight 300–400, in shuttle cream) — engineered and readable on warm dark surfaces. For condition notes, mill history, thread count compatibility notes, and all prose fields.
+Monospace / Identifiers: IBM Plex Mono — for archive codes like SMR-PERSIMMON-FLYSHUTTLE-1887-GBR-LANCASHIRE-COTTON-031, shuttle length (L: 340 mm), pirn capacity (220 m / 2/60s cotton), and all structured technical fields.
+Important: Archivo in uppercase for shuttle names and component headers — a shuttle maker's trade stamp was always uppercase, and the typography should honor that convention. IBM Plex Mono for every length, pirn capacity, and archive code — shuttle dimensions were held to tight tolerances because a misfit shuttle in a high-speed picking mechanism was a catastrophic failure event.
+
+4. SURFACE & TEXTURE LANGUAGE
+
+Backgrounds: flat shed dark — no wood grain, no lint texture, no noise
+Cards: #181208 surface with a 1px border at #1E1810 and 10px corner radius — dark component record drawers in a dark mill archive
+Shuttle profile motif: each list card features a small SVG — a minimal top-down plan-view silhouette of the shuttle type: a fly-shuttle as its characteristic elongated lens shape with pointed metal tips at both ends, a ski-shuttle as a flatter wider profile, a boat shuttle as a more oval form with a central pirn holder, a hand-thrown shuttle as a shorter rounder form. The pirn or bobbin inside each shuttle silhouette is rendered as a small centered oval. Shuttle body in persimmon amber for complete and operational specimens, picking teal for display or damaged condition. The plan-view reference is drawn from textile engineering drawing practice — shuttles were always dimensioned from above because the picking path is a horizontal plane.
+Thread compatibility badge: each card shows the thread type and count in IBM Plex Mono — Cotton 2/60s, Wool 2/32Nm, Silk 20/22 denier — in a small dark warm-bordered pill in persimmon amber text. The defining operational specification — a shuttle's internal geometry was calibrated for a specific thread count and fiber type.
+Photography: shuttle photography on near-black or very deep warm grey — the plan view preferred, showing the full lens profile and metal tip ferrules. For shuttles with visible maker stamps, show the stamp face. The wood grain of persimmon should be visible against the dark background. No props, no thread in frame.
+Mill provenance tag: small pill showing the originating mill or weaving district — Lancashire Cotton, Yorkshire Wool, Lyons Silk, Lowell Massachusetts — in persimmon amber at 15% opacity fill with full amber text
+
+
+5. INTERACTION PRINCIPLES
+
+Transitions: 160–200ms ease-out — the fastest in the dark-background group, referencing the speed of the shuttle itself. A fly-shuttle crosses a six-foot loom in under a tenth of a second — the UI should feel correspondingly quick and precise.
+Selected state: persimmon amber left-border (3px) + very faint #1A1008 background tint on active cards
+Empty states: NO SHUTTLES IN THIS SHED. in IBM Plex Mono, centered, lint grey — one line
+Loading: a thin persimmon amber progress bar at screen top — fast onset, matching the shuttle's velocity
+Navigation: bottom tab bar on shed dark surface — four tabs: Shed, Mill Map, Logbook, Settings. Active tab in persimmon amber. Tab bar background #181208, border top #1E1810.
+Fiber type filter: a first-class filter chip row — Cotton, Wool, Silk, Linen, Synthetic, Mixed — because the fiber a shuttle was engineered for determines its internal bore diameter, its pirn geometry, its tip material, and its picking speed rating, making fiber type the primary engineering classification axis for any fly-shuttle collection
+
+Important: The shuttle plan-view SVG on each card is the most velocity-encoded motif in the series — the pointed metal ferrule tips at both ends of the lens profile communicate speed and directionality before any label is read. No other object in the series was designed to move this fast or this repeatedly — a Lancashire loom ran at 200 picks per minute, meaning each shuttle made that crossing 200 times every minute for decades. The persimmon amber lens profile should carry that kinetic history in its silhouette. Amber means the shuttle is complete, tip-intact, and pirn-ready. Teal means it lives in a case. That distinction should feel as immediate as the difference between a working loom and a museum exhibit.
